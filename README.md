@@ -175,7 +175,6 @@ def update_associations(blue_id, token, url, to_remove, to_add)
 
 #### Subaccount-level functions:
 ```python
-#Subaccount-level functions
 '''
 Function prints out the subaccount structure of a given node
 Parameters:
