@@ -29,10 +29,10 @@ from CC_API_jh2 import CAPICO
     time = start_at.astimezone(pytz.UTC)
     ```
 
-3. IDs of Canvas objects (Course, Account, etc.): They can be easily found in the URL, and should be inputted as Strings, as mentioned in the function specifications below. For example, if your URL was as follows, https://canvas.ubc.ca/courses/12345, then:
+3. IDs of Canvas objects (Course, Account, etc.): They can be easily found in the URL, and should be inputted as Strings, as mentioned in the function specifications below. For example, if your URL was as follows, https://canvas.ubc.ca/courses/123456789, then:
 
     ```python
-    course_id = '12345'
+    course_id = '123456789'
     ```
 
 ### Available Functions:
