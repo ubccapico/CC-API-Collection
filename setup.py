@@ -16,7 +16,7 @@ except:
 setup(
   name = 'CC_API_jh2',         # How you named your package folder (MyLib)
   packages = ['CC_API_jh2'],   # Chose the same as "name"
-  version = '0.11.50',      # Start with a small number and increase it with every change you make
+  version = '0.11.51',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Canvas API helper functions for the CAPICO group.',   # Give a short description about your library
   long_description=long_description,
@@ -24,8 +24,8 @@ setup(
   include_package_data=True,
   author = 'Jeremy H.',                   # Type in your name
   author_email = 'jeremyh2@mail.ubc.ca',      # Type in your E-Mail
-  url = 'https://github.com/JeremyH011/CAPICO-Library',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/JeremyH011/CAPICO-Library/archive/v0.1.tar.gz',    # I explain this later on
+  url = 'https://github.com/ubccapico/CC-API-Collection',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/ubccapico/CC-API-Collection/archive/v0.11.51.tar.gz',    # I explain this later on
   keywords = ['CAPICO', 'Canvas'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'requests',
