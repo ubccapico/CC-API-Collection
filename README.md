@@ -8,7 +8,7 @@ from CC_API_jh2 import CAPICO
 
 ### Available Functions:
 #### User-level Functions:
-```
+```python
 '''
 Function gets page views for a user between start and end dates (UTC-8 DateTime objects).
 Parameters:
@@ -19,10 +19,10 @@ Parameters:
 Returns:
     Pandas dataframe of all pages views for a user between start and end date
 '''
-**def get_user_page_views(user, token, url, start, end)**
+def get_user_page_views(user, token, url, start, end)
 ```
 #### Course-level Functions:
-```
+```python
 '''
 Helper function that gets Canvas course information.
 Parameters:
@@ -32,7 +32,7 @@ Parameters:
 Returns:
     Course object (JSON)
 '''
-**def get_course_info(course_id, token, url)**
+def get_course_info(course_id, token, url)
 
 '''
 Gets all students in a course.
@@ -43,7 +43,7 @@ Parameters:
 Returns:
     Pandas DataFrame of students in a course
 '''
-**def get_student_list(url, class_id, token)**
+def get_student_list(url, class_id, token)
 
 '''
 Gets all course modules
@@ -54,7 +54,7 @@ Parameters:
 Returns:
     Pandas DataFrame of modules in a course
 '''
-**def get_course_modules(url, class_id, token)**
+def get_course_modules(url, class_id, token)
 
 '''
 Gets all course pages
@@ -65,7 +65,7 @@ Parameters:
 Returns:
     Pandas DataFrame of pages in a course
 '''
-**def get_course_pages(url, class_id, token)**
+def get_course_pages(url, class_id, token)
 
 '''
 Gets all course files
@@ -76,7 +76,7 @@ Parameters:
 Returns:
     Pandas DataFrame of files in a course
 '''
-**def get_course_files(url, class_id, token)**
+def get_course_files(url, class_id, token)
 
 '''
 Gets all users with as specified role in a course
@@ -88,5 +88,5 @@ Parameters:
 Returns:
     Pandas DataFrame of all users with a specified role in a course
 '''
-**def get_course_users(url_in, token_in, course_in, user_type)**
+def get_course_users(url_in, token_in, course_in, user_type)
 ```
