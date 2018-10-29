@@ -1,6 +1,11 @@
 # CAPICO-Library
 A library for Python 3 that provides a variety of helper functions for working with the Canvas API. Pagination is dealt with automatically for all relevant functions (so a returned pandas DataFrame will have **ALL** information).
 
+This library can be installed using pip (https://pypi.org/project/CC-API-jh2/).
+```
+pip install CC-API-jh2
+```
+
 ## To begin:
 ```python
 from CC_API_jh2 import CAPICO
