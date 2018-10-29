@@ -7,7 +7,20 @@ from CC_API_jh2 import CAPICO
 ```
 
 ### Available Functions:
-List below are all the available functions, categorised by what level they affect.
+Listed below are all the available functions, categorised by what level they affect.
+
+#### Pagination Helper Function (Used automatically by relevant functions);
+```python
+'''
+Compiles a paginated list into a single Pandas Dataframe
+Parameter:
+    sublist (JSON): Initial API response text
+    token (String): Canvas token
+Returns:
+    A single Pandas DataFrame of all information for a paginated list
+'''
+def paginate_list(sub_list, token)
+```
 
 #### User-level Functions:
 ```python
