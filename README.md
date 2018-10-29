@@ -11,6 +11,30 @@ pip install CC-API-jh2
 from CC_API_jh2 import CAPICO
 ```
 
+### Pre-notes:
+#### Formatting/Details of inputs:
+
+1. URL input (url): The URL of the Canvas instance you are running the scripts on. An example would be:
+
+    ```python
+    url = 'https://canvas.ubc.ca'
+    ```
+    
+2. DateTime input: Canvas accepts DateTime objects of UTC-8 in ISO8601 format. The easiest way to do this is by using the datetime and pytz library. An example would be:   
+    
+    ```python
+    #Set your local timezone (takes into consideration Daylight Savings)
+    local = pytz.timezone("America/Vancouver")
+    time = datetime(year, month, day, hour, minutes, 0, 0, local)
+    time = start_at.astimezone(pytz.UTC)
+    ```
+
+3. IDs of Canvas objects (Course, Account, etc.): They can be easily found in the URL, and should be inputted as Strings, as mentioned in the function specifications below. For example, if your URL was as follows, https://canvas.ubc.ca/courses/12345, then:
+
+    ```python
+    course_id = '12345'
+    ```
+
 ### Available Functions:
 Listed below are all the available functions, categorised by what level they affect.
 
