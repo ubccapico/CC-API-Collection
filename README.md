@@ -1,5 +1,5 @@
 # CAPICO-Library
-A helper library for Python 3 that provides a variety of helper functions for working with the Canvas API. Pagination is dealt with automatically for all relevant functions (so a returned pandas DataFrame will have **ALL** information.
+A helper library for Python 3 that provides a variety of helper functions for working with the Canvas API. Pagination is dealt with automatically for all relevant functions (so a returned pandas DataFrame will have **ALL** information).
 
 ## To begin:
 ```python
