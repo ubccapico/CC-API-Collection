@@ -89,6 +89,20 @@ Returns:
     Pandas DataFrame of all users with a specified role in a course
 '''
 def get_course_users(url_in, token_in, course_in, user_type)
+
+# allow_student_organized_groups, enable_offline_web_export
+'''
+Change settings for a course
+Parameters:
+    url_in (String): URL of Canvas instance
+    token_in (String): Canvas token
+    course_in (String): Canvas ID of course
+    setting_name (String): Name of setting to change
+    setting_value (int/Boolean): 1 is True, 0 is False
+Returns:
+    None
+'''
+def change_course_settings(url_in, token_in, course_in, setting_name, setting_value)
 ```
 
 #### Course-quiz functions:
@@ -156,5 +170,63 @@ Returns:
     None
 '''
 def update_associations(blue_id, token, url, to_remove, to_add)
+
+```
+
+#### Subaccount-level functions:
+```python
+#Subaccount-level functions
+'''
+Function prints out the subaccount structure of a given node
+Parameters:
+    account_id (String): Canvas ID of node to find children for
+    token (String): Canvas token
+    url (String): Canvas URL
+Returns:
+    None
+'''
+def print_subaccount_tree(account_id, token, url)
+
+'''
+Recursive helper function
+Parameters:
+    account_id (String): Canvas ID of node to find children for
+    spaces (int): Number of spaces (internally counted)
+    token (String): Canvas token
+    url (String): Canvas URL
+Returns:
+    None
+'''
+def print_subaccount_tree_helper(account_id, spaces, token, url)
+
+'''
+Gets the info about a subaccount (Incomplete)
+'''
+def get_account_info(url_in, token_in, subaccount_in)
+
+'''
+Gets all courses under a subaccount (and all of its children accounts as well)
+Parameters:
+    url_in (String): URL of Canvas instance
+    token_in (String): Canvas token
+    subaccount_in (String, int): Canvas Subaccount ID
+Returns:
+    Pandas DataFrame of all course under a subaccount
+'''
+def get_account_courses(url_in, token_in, subaccount_in)
+
+# See change_course_settings
+def change_course_settings_subaccount(url_in, token_in, subaccount_in, setting_names, setting_value)
+
+'''
+List all of the enrollment terms under a master account
+Parameteres:
+    url_in (String): URL of Canvas instance
+    token_in (String): Canvas token
+    subaccount_in (String): Canvas ID of master account
+Returns:
+    Pandas DataFrame of all enrollment terms
+'''
+def list_enrollment_terms(url_in, token_in, subaccount_in)
 
 ```
