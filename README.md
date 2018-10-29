@@ -7,6 +7,8 @@ from CC_API_jh2 import CAPICO
 ```
 
 ### Available Functions:
+List below are all the available functions, categorised by what level they affect.
+
 #### User-level Functions:
 ```python
 '''
