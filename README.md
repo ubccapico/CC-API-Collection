@@ -188,18 +188,6 @@ Returns:
 def print_subaccount_tree(account_id, token, url)
 
 '''
-Recursive helper function
-Parameters:
-    account_id (String): Canvas ID of node to find children for
-    spaces (int): Number of spaces (internally counted)
-    token (String): Canvas token
-    url (String): Canvas URL
-Returns:
-    None
-'''
-def print_subaccount_tree_helper(account_id, spaces, token, url)
-
-'''
 Gets the info about a subaccount (Incomplete)
 '''
 def get_account_info(url_in, token_in, subaccount_in)
